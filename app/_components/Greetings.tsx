@@ -1,6 +1,6 @@
 import React from "react";
 
-const Greetings = ({ setTimeStamp }) => {
+const Greetings = ({ setTimeStamp, timeStamp }) => {
   
   const getCurrentGreeting = () => {
     const currentHour = new Date().getHours();
@@ -12,6 +12,8 @@ const Greetings = ({ setTimeStamp }) => {
       return "Good evening";
     }
   };
+
+  console.log('hh', timeStamp)
 
   const greetingMessage = getCurrentGreeting();
 

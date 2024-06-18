@@ -13,9 +13,10 @@ import { useState } from "react";
 
 export default function Home() {
   const [data, setData] = useState([null]);
-  const [timeStamp, setTimeStamp] = useState("monthly");
+  const [timeStamp, setTimeStamp] = useState("weekly");
 
   console.log('here', timeStamp);
+
   useEffect(() => {
     axios
       .post("/api/mockdata",{
@@ -28,7 +29,7 @@ export default function Home() {
 
   return (
     <div className="w-full p-4 bg-[#efefef] h-fit">
-      <Greetings setTimeStamp={setTimeStamp}/>
+      <Greetings setTimeStamp={setTimeStamp} timeStamp={timeStamp}/>
       <div className="p-2 flex flex-col gap-4 py-8">
         <AccountInsights data={data}/>
         <div className="flex gap-4 md:flex-row flex-col">
