@@ -28,7 +28,7 @@ const TopPosts = ({ data }) => {
           <iframe
             key={index}
             src={post.src}
-            className="md:w-96 w-full h-96 shadow-md border-[1px] border-gray-200 rounded-lg cursor-pointer"
+            className="w-full h-96 shadow-md border-[1px] border-gray-200 rounded-lg cursor-pointer"
             title={post.title}
           ></iframe>
         ))}
