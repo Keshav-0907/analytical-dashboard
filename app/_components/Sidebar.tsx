@@ -20,9 +20,9 @@ const Sidebar = () => {
     }
   ]
   return (
-    <div className='w-1/6 border-r-2 h-full'>
+    <div className='w-1/6 border-r-2 h-full md:flex hidden'>
       <div className='py-3 px-5 flex flex-col gap-2 font-semibold'>
-        <div className='bg-[#4C41E1] text-white  p-2 rounded-lg hover:bg-black cursor-pointer'>
+        <div className='bg-[#4C41E1] text-white  p-2 rounded-lg hover:bg-black'>
           Write a Post
         </div>
         <div className='flex flex-col gap-2'>
