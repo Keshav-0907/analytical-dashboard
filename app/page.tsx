@@ -18,7 +18,7 @@ export default function Home() {
   console.log('here', timeStamp);
   useEffect(() => {
     axios
-      .post("http://localhost:3000/api/mockdata",{
+      .post("/api/mockdata",{
         timeStamp: timeStamp
       
       })
